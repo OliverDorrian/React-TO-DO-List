@@ -4,9 +4,11 @@ function MainContent(){
     return (
         <div id="main-content">
             <Buttons/>
+
         </div>
     );
 }
+
 
 function Buttons(){
     return (
@@ -20,5 +22,14 @@ function Buttons(){
         </div>
     );
 }
+
+function List(passedName){
+    return (
+        <div>
+
+        </div>
+    );
+}
+
 
 export default MainContent;
