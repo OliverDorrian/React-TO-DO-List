@@ -8,6 +8,7 @@ function App() {
         <CreateBackGround/>
         <TopBar/>
         <MainContent/>
+        
     </div>
   );
 }
