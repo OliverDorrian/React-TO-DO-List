@@ -25,7 +25,7 @@ function ToDoForm(props){
                 <div id="row-buttons-left">
                     <input 
                             type="text" 
-                            placeholder="Add-Item"
+                            placeholder="Add Item to List"
                             value={input} 
                             name="text"
                             class="search-box" 

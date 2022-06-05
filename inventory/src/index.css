@@ -10,7 +10,7 @@
 }
 
 body{
-  background-color: black;
+  background-color: rgb(36, 36, 36);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -19,6 +19,7 @@ body{
   position: fixed;
   display: flex;
   align-items: center;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   animation: spinning 10s infinite linear;
@@ -54,9 +55,6 @@ body{
   width: 70%;
   min-height: 80vh;
   margin-left: 15%;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   border-radius: 40px; 
 }
 
@@ -82,13 +80,20 @@ body{
 }
 
 
-.search-box{
+.search-box {
   font-size: 1.5em;
-  color: black;
-  border-radius: 10px;
+  color: white;
+
+  background: transparent;
   border: 0;
+  border-bottom: 2px solid #fba81f;
   width: 100%;
   height: 5vh;
+}
+
+.search-box:focus{
+  outline: none;
+  border-bottom: 2px solid white;
 }
 
 .button{
@@ -99,4 +104,40 @@ body{
 
   width: 10vw;
   height: 5vh;
+}
+
+#list-of-to-do {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-row{
+  padding: 1%;
+  width: 100%;
+  min-height: 5vh;
+  font-size: 2em;
+  text-align: top;
+
+  backdrop-filter: blur(5px);
+  background-color: hwb(0 0% 100% / 0.562);
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 5vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.text-area{
+
+}
+
+.icons{
+  margin-left: auto;
+}
+
+.complete{
+  text-decoration: line-through;
 }
