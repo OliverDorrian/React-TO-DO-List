@@ -1,14 +1,13 @@
 import TopBar from './TopBar';
-import MainContent from './main';
 import CreateBackGround from './background';
+import TodoList from './TodoList';
 
 function App() {
   return (
     <div className="App">
         <CreateBackGround/>
         <TopBar/>
-        <MainContent/>
-        
+        <TodoList/>      
     </div>
   );
 }
